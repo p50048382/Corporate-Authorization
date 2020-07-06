@@ -1,0 +1,231 @@
+<div class="m-width mb-5">
+  <!-- <div class="container">
+      <mat-card>
+        <mat-card-title>
+          <mat-icon>poll</mat-icon>
+          Overview Screen
+        </mat-card-title>
+      </mat-card>
+      <mat-icon>poll</mat-icon>
+      <b>OverView Screen</b>
+    </div> -->
+  <div class="container-fluid">
+    <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+
+      <!-- *Checkbox Column -->
+      <ng-container matColumnDef="select">
+        <mat-header-cell *matHeaderCellDef style="padding: 0px !important;"
+          >SELECT</mat-header-cell
+        >
+        <mat-cell *matCellDef="let row" style="padding: 0px !important;">
+          <mat-checkbox
+            (click)="$event.stopPropagation()"
+            (change)="$event ? selection.toggle(row) : null"
+            [checked]="selection.isSelected(row)"
+            color="warn"
+          >
+          </mat-checkbox>
+        </mat-cell>
+      </ng-container>
+
+      <!--* from date Column -->
+      <ng-container matColumnDef="fromDate">
+        <mat-header-cell *matHeaderCellDef>FROM DATE</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{ element.fromDate }}</mat-cell>
+      </ng-container>
+
+      <!-- *To date Column -->
+      <ng-container matColumnDef="toDate">
+        <mat-header-cell *matHeaderCellDef>TO DATE</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{ element.toDate }}</mat-cell>
+      </ng-container>
+
+      <!--* From Employee column -->
+      <ng-container matColumnDef="fromEmployeeCode">
+        <mat-header-cell *matHeaderCellDef>FROM EMPLOYEE</mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          {{ element.fromEmployeeCode }}
+        </mat-cell>
+      </ng-container>
+
+      <!--* From Employee Name column -->
+      <ng-container matColumnDef="fromEmployeeName">
+        <mat-header-cell *matHeaderCellDef>FROM EMPLOYEE NAME</mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          {{ element.fromEmployeeName }}
+        </mat-cell>
+      </ng-container>
+
+      <!-- *To employee Code  -->
+      <ng-container matColumnDef="toEmployeeCode">
+        <mat-header-cell *matHeaderCellDef class="text-center">
+          TO EMPLOYEE
+        </mat-header-cell>
+        <!-- <td [ngClass]="{ status: status }" mat-cell *matCellDef="let element"> -->
+        <mat-cell *matCellDef="let element">
+          {{ element.toEmployeeCode }}
+        </mat-cell>
+      </ng-container>
+
+      <!--* To Employee Name Column -->
+      <ng-container matColumnDef="toEmployeeName" class="text-center">
+        <mat-header-cell *matHeaderCellDef>TO EMPLOYEE NAME</mat-header-cell>
+        <mat-cell *matCellDef="let element" class="text-center">
+          {{ element.toEmployeeName }}
+        </mat-cell>
+      </ng-container>
+
+      <!--* from Business  -->
+      <ng-container matColumnDef="fromBusiness" class="text-center">
+        <mat-header-cell *matHeaderCellDef>FROM BUSINESS</mat-header-cell>
+        <mat-cell *matCellDef="let element" class="text-center">
+          {{ element.fromBusiness }}
+        </mat-cell>
+      </ng-container>
+
+      <!-- * From Business class -->
+      <ng-container matColumnDef="fromBusinessClass" class="text-center">
+        <mat-header-cell *matHeaderCellDef>FROM BUSINESS CLASS</mat-header-cell>
+        <mat-cell *matCellDef="let element" class="text-center">
+          {{ element.fromBusinessClass }}
+        </mat-cell>
+      </ng-container>
+
+      <!--* To Business -->
+      <ng-container matColumnDef="toBusiness" class="text-center">
+        <mat-header-cell *matHeaderCellDef>TO BUSINESS</mat-header-cell>
+        <mat-cell *matCellDef="let element" class="text-center">
+          {{ element.toBusiness }}
+        </mat-cell>
+      </ng-container>
+
+      <!--* To Business Class -->
+      <ng-container matColumnDef="toBusinessClass" class="text-center">
+        <mat-header-cell *matHeaderCellDef>TO BUSINESS CLASS</mat-header-cell>
+        <mat-cell *matCellDef="let element" class="text-center">
+          {{ element.toBusinessClass }}
+        </mat-cell>
+      </ng-container>
+
+      <!--* Requester Employee Code -->
+      <ng-container matColumnDef="requesterCode" class="text-center">
+        <mat-header-cell *matHeaderCellDef>REQUESTER E.CODE</mat-header-cell>
+        <mat-cell *matCellDef="let element" class="text-center">
+          {{ element.requesterCode }}
+        </mat-cell>
+      </ng-container>
+
+      <!--* Requester Name -->
+      <ng-container matColumnDef="requesterName" class="text-center">
+        <mat-header-cell *matHeaderCellDef>REQUESTER NAME</mat-header-cell>
+        <mat-cell *matCellDef="let element" class="text-center">
+          {{ element.requesterName }}
+        </mat-cell>
+      </ng-container>
+
+      <!--* Requester Employee Code -->
+      <ng-container matColumnDef="requestedDate" class="text-center">
+        <mat-header-cell *matHeaderCellDef>REQUESTED DATE</mat-header-cell>
+        <mat-cell *matCellDef="let element" class="text-center">
+          {{ element.requestedDate | date }}
+        </mat-cell>
+      </ng-container>
+
+      <!-- *This container is for loading mat-footer-row -->
+      <ng-container matColumnDef="loading">
+        <mat-footer-cell
+          style="justify-content: center; font-style: italic;"
+          *matFooterCellDef
+          colspan="0"
+        >
+          Loading data ...
+        </mat-footer-cell>
+      </ng-container>
+      <!-- *This container is for loading mat-footer-row -->
+      <ng-container matColumnDef="noData">
+        <mat-footer-cell
+          *matFooterCellDef
+          style="justify-content: center; font-style: italic;"
+          colspan="0"
+        >
+          No Request Pending
+        </mat-footer-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row
+        class="text-center"
+        *matRowDef="let row; columns: displayedColumns"
+        (click)="selection.toggle(row)"
+      ></mat-row>
+
+      <mat-footer-row
+        *matFooterRowDef="['loading']"
+        [ngClass]="{ hide: dataSource != null }"
+      ></mat-footer-row
+      >s
+      <mat-footer-row
+        *matFooterRowDef="['noData']"
+        [ngClass]="{
+          hide: !(dataSource != null && dataSource?.data?.length === 0)
+        }"
+      ></mat-footer-row>
+    </mat-table>
+  </div>
+</div>
+
+<!--* THe buttons in the footer section  -->
+<mat-toolbar class="footer">
+  <span class="fill-remaining-space"></span>
+  <span class="fill-remaining-space"></span>
+  <span>
+    <button
+      mat-raised-button
+      type="button"
+      [ngClass]="{
+        button1: true
+      }"
+      style="width: 120px;"
+      (click)="selectAll()"
+    >
+      <span *ngIf="!(selection.hasValue() && isAllSelected())">
+        Select All
+      </span>
+      <span *ngIf="selection.hasValue() && isAllSelected()">
+        Unselect All
+      </span>
+    </button>
+    <button
+      mat-raised-button
+      type="button"
+      [ngClass]="{
+        button1: true,
+        'ml-2': true,
+        btnDisabled: '!selection.hasValue()'
+      }"
+      [disabled]="!selection.hasValue()"
+      (click)="openDialog(true)"
+      color="primary"
+      style="width: 100px; height: 30px;"
+    >
+      Approve
+    </button>
+    <button
+      mat-raised-button
+      type="button"
+      [ngClass]="{
+        button1: true,
+        'ml-2': true,
+        btnDisabled: '!selection.hasValue()'
+      }"
+      [disabled]="!selection.hasValue()"
+      (click)="openDialog(false)"
+      color="warn"
+      style="width: 100px; height: 30px;"
+    >
+      Reject
+    </button>
+  </span>
+</mat-toolbar>

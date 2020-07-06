@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>
+  <mat-icon class="align-middle">info</mat-icon> Confirmation
+</h1>
+
+<div mat-dialog-content>
+  <p>
+    Do you want to
+    <span *ngIf="dataService.approve_reject" class="text-success">Approve</span>
+    <span *ngIf="!dataService.approve_reject" class="text-danger">Reject</span>
+    the requests?
+  </p>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-raised-button (click)="onNoClick()">No</button>
+  <button
+    mat-raised-button
+    [color]="dataService.approve_reject ? 'primary' : 'warn'"
+    cdkFocusInitial
+    (click)="onYesClick()"
+  >
+    <span *ngIf="dataService.approve_reject">Approve</span>
+    <span *ngIf="!dataService.approve_reject">Reject</span>
+  </button>
+</div>

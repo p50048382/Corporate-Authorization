@@ -1,0 +1,7 @@
+.sticky-top {
+  position: fixed !important;
+  top: 0;
+}
+.new-margin {
+  margin-top: 70px !important;
+}

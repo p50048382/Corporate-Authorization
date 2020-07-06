@@ -1,0 +1,45 @@
+.hide {
+  display: none;
+}
+.button1 {
+  line-height: 29px;
+  border-radius: 15px;
+}
+.m-width {
+  min-width: 700px;
+}
+mat-card,
+mat-table {
+  min-width: 700px;
+  background-color: cornsilk;
+}
+mat-header-row {
+  background-color: rgba(27, 25, 25, 0.822) !important;
+  text-align: center;
+}
+.mat-header-cell {
+  color: rgb(212, 211, 211);
+  justify-content: center;
+}
+mat-row {
+  background-color: rgb(255, 255, 255) !important;
+  justify-content: center;
+}
+.mat-cell {
+  justify-content: center;
+}
+@media (max-width: 700px) {
+  mat-card,
+  mat-table {
+    margin: 5px !important;
+  }
+  .container {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+mat-cell:last-of-type,
+mat-header-cell:last-of-type,
+mat-footer-cell:last-of-type {
+  padding-right: 0 !important;
+}

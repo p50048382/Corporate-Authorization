@@ -1,0 +1,65 @@
+<div class="text-center mb-1 bg-light">
+  <b style="color: #952424;">CANCEL REQUEST</b>
+</div>
+<form
+  [formGroup]="formService.form"
+  class="container normal-form bg-light"
+  (submit)="onSubmit()"
+>
+  <mat-grid-list cols="2" rowHeight="100px">
+    <mat-grid-tile colspan="1" rowspan="2">
+      <div class="control-container">
+        <!-- * From colleage field -->
+        <mat-form-field class="w-100">
+          <mat-label>Your Name</mat-label>
+          <input matInput formControlName="fromEmployee" />
+        </mat-form-field>
+        <!-- * From Date field -->
+        <mat-form-field class="w-100">
+          <input formControlName="fromDate" matInput placeholder="From Date" />
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2">
+      <div class="control-container">
+        <!-- * To employee name field -->
+        <mat-form-field class="w-100">
+          <mat-label>Assigned To</mat-label>
+          <input matInput formControlName="toEmployee" />
+        </mat-form-field>
+        <!-- * To Date Field -->
+        <mat-form-field class="w-100">
+          <input formControlName="toDate" matInput placeholder="To Date" />
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+    <!-- <mat-grid-tile colspan="2" rowspan="1" style="justify-content: flex-start;">
+      
+    </mat-grid-tile> -->
+    <mat-grid-tile colspan="2" rowspan="1">
+      <div class="button-row">
+        <mat-checkbox formControlName="cancel"
+          ><span style="margin-right: 100px;">Cancel </span>
+        </mat-checkbox>
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          [disabled]="!formService.form.controls['cancel'].value"
+        >
+          Submit
+        </button>
+
+        <button
+          mat-raised-button
+          color="warn"
+          type="button"
+          class="ml-2"
+          (click)="onCancel()"
+        >
+          Close
+        </button>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>
