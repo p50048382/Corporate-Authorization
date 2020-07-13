@@ -1,0 +1,178 @@
+<!-- *Table section -->
+<div class="m-width mb-5">
+  <!-- <div class="container">
+      <mat-card>
+        <mat-card-title>
+          <mat-icon>poll</mat-icon>
+          Overview Screen
+        </mat-card-title>
+      </mat-card>
+      <mat-icon>poll</mat-icon>
+      <b>OverView Screen</b>
+    </div> -->
+  <div class="container">
+    <mat-table [dataSource]="odataDataSource" class="mat-elevation-z8">
+      <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+      <!-- Checkbox Column -->
+      <ng-container matColumnDef="select">
+        <mat-header-cell *matHeaderCellDef style="padding: 0px !important;"
+          >SELECT</mat-header-cell
+        >
+        <mat-cell *matCellDef="let element" style="padding: 0px !important;">
+          <mat-checkbox color="warn" (change)="onRowSelection(element, $event)">
+          </mat-checkbox>
+        </mat-cell>
+      </ng-container>
+      <!-- from date Column -->
+      <ng-container matColumnDef="Begda">
+        <mat-header-cell *matHeaderCellDef>FROM DATE</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{
+          element.Begda | date
+        }}</mat-cell>
+      </ng-container>
+
+      <!-- To date Column -->
+      <ng-container matColumnDef="Endda">
+        <mat-header-cell *matHeaderCellDef>TO DATE</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{
+          element.Endda | date
+        }}</mat-cell>
+      </ng-container>
+
+      <!-- From Employee column -->
+      <ng-container matColumnDef="PernrFrom">
+        <mat-header-cell *matHeaderCellDef>FROM EMPLOYEE</mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          {{ element.PernrFrom }}
+        </mat-cell>
+      </ng-container>
+
+      <!--* From Employee Name column -->
+      <ng-container matColumnDef="EnameFrom">
+        <mat-header-cell *matHeaderCellDef>FROM EMPLOYEE NAME</mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          {{ element.EnameFrom }}
+        </mat-cell>
+      </ng-container>
+
+      <!-- * To employee code -->
+      <ng-container matColumnDef="PernrTo">
+        <mat-header-cell *matHeaderCellDef class="text-center">
+          TO EMPLOYEE
+        </mat-header-cell>
+        <!-- <td [ngClass]="{ status: status }" mat-cell *matCellDef="let element"> -->
+        <mat-cell *matCellDef="let element">
+          {{ element.PernrTo }}
+        </mat-cell>
+      </ng-container>
+
+      <!--* To Employee Name Column -->
+      <ng-container matColumnDef="EnameTo" class="text-center">
+        <mat-header-cell *matHeaderCellDef>TO EMPLOYEE NAME</mat-header-cell>
+        <mat-cell *matCellDef="let element" class="text-center">
+          {{ element.EnameTo }}
+        </mat-cell>
+      </ng-container>
+
+      <!--* Approver Column -->
+      <ng-container matColumnDef="EnameApprover" class="text-center">
+        <mat-header-cell *matHeaderCellDef>APPROVER</mat-header-cell>
+        <mat-cell *matCellDef="let element" class="text-center">
+          {{ element.EnameApprover }}
+        </mat-cell>
+      </ng-container>
+
+      <!-- * Status column -->
+      <ng-container matColumnDef="status" class="text-center">
+        <mat-header-cell *matHeaderCellDef>STATUS</mat-header-cell>
+        <mat-cell *matCellDef="let element" class="text-center">
+          <span
+            [ngClass]="{
+              'font-italic': element.Status === 'Pending',
+              'font-weight-bold': true,
+              'text-primary': element.Status === 'Pending',
+              'text-success': element.Status === 'approved',
+              'text-danger': element.Status === 'rejected'
+            }"
+            >{{ element.Status }}</span
+          >
+        </mat-cell>
+      </ng-container>
+
+      <!-- *This container is for loading mat-footer-row -->
+      <ng-container matColumnDef="loading">
+        <mat-footer-cell
+          style="justify-content: center; font-style: italic;"
+          *matFooterCellDef
+          colspan="0"
+        >
+          Loading data ...
+        </mat-footer-cell>
+      </ng-container>
+      <!-- *This container is for loading mat-footer-row -->
+      <ng-container matColumnDef="noData">
+        <mat-footer-cell
+          *matFooterCellDef
+          style="justify-content: center; font-style: italic;"
+          colspan="0"
+        >
+          No Requests
+        </mat-footer-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="odataDisplayedColumns"></mat-header-row>
+      <mat-row
+        class="text-center"
+        *matRowDef="let row; columns: odataDisplayedColumns"
+      ></mat-row>
+
+      <!-- *For Loading And no data -->
+      <mat-footer-row
+        *matFooterRowDef="['loading']"
+        [ngClass]="{ hide: odataDataSource != null }"
+      ></mat-footer-row>
+      <mat-footer-row
+        *matFooterRowDef="['noData']"
+        [ngClass]="{
+          hide: !(
+            odataDataSource != null && odataDataSource?.data?.length === 0
+          )
+        }"
+      ></mat-footer-row>
+    </mat-table>
+  </div>
+</div>
+
+<!--* THe buttons in the footer section  -->
+<mat-toolbar class="footer">
+  <span class="fill-remaining-space"></span>
+  <span class="fill-remaining-space"></span>
+  <span>
+    <button
+      mat-raised-button
+      type="button"
+      [ngClass]="{
+        button1: true
+      }"
+      (click)="newRequest()"
+      style="width: 115px;"
+    >
+      New Request
+    </button>
+
+    <button
+      mat-raised-button
+      type="button"
+      [ngClass]="{
+        button1: true,
+        'ml-2': true
+      }"
+      color="warn"
+      (click)="cancelRequest()"
+      style="width: 130px; height: 30px;"
+    >
+      Cancel Request
+    </button>
+  </span>
+</mat-toolbar>

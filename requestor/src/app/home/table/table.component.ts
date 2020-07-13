@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, Scroll } from '@angular/router';
 import { OverviewService } from 'src/app/shared/overview.service';
 import { NotificationService } from 'src/app/shared/notification.service';
 import { MatTableDataSource } from '@angular/material/table';
@@ -14,7 +14,8 @@ import { DeleteRequestComponent } from '../delete-request/delete-request.compone
 
 @Component({
   selector: 'app-table',
-  templateUrl: './table.component.html',
+  // templateUrl: './table.component.html',
+  templateUrl: './odataTable.component.html',
   styleUrls: ['./table.component.css'],
   providers: [],
 })
@@ -30,8 +31,23 @@ export class TableComponent implements OnInit {
     'approver',
     'status',
   ];
+  // * For odata binding
+  odataDisplayedColumns: string[] = [
+    'select',
+    'Begda',
+    'Endda',
+    'PernrFrom',
+    'EnameFrom',
+    'PernrTo',
+    'EnameTo',
+    'EnameApprover',
+    'status',
+  ];
   dataSource: any = null;
   selectedRows = [];
+
+  // *Working with odata
+  odataDataSource: any = null;
   constructor(
     public formService: FormService,
     private overviewService: OverviewService,
@@ -45,6 +61,21 @@ export class TableComponent implements OnInit {
   getOverviewData() {
     this.selectedRows = [];
     this.dataSource = null;
+    this.odataDataSource = null;
+
+    // *This is for odata
+    this.overviewService.getOdataPastRequests().subscribe((response) => {
+      this.odataDataSource = [];
+      // console.log(response);
+      let array = [];
+      response['entry'].forEach((element) => {
+        array.push(element['content']['properties']);
+      });
+      // array.push(response['entry']['content']['properties']);
+      this.odataDataSource = new MatTableDataSource(array);
+    });
+
+    // * This is for nodejs data
     this.overviewService.getPastRequests().subscribe(
       (response) => {
         this.dataSource = response;
@@ -67,7 +98,7 @@ export class TableComponent implements OnInit {
         this.selectedRows.findIndex((element2) => element1 === element2),
         1
       );
-      // *Here the splice function is working fine because element1 and element2 are in same stored in same array because arrays compares by references
+      // *Here the splice function is working fine because element1 and element2 are  stored in same array because arrays are compared by references not values
       // console.log(this.selectedRows);
     }
   }
@@ -77,19 +108,29 @@ export class TableComponent implements OnInit {
   }
   cancelRequest() {
     if (this.selectedRows.length < 1) {
-      this.notificationService.warn(':: Kindly select a request to delete.');
+      this.notificationService.info(':: Kindly select a request to delete.');
     } else if (this.selectedRows.length > 1) {
-      this.notificationService.warn(
+      this.notificationService.info(
         ':: Only one request can be deleted at a time.'
       );
     } else {
+      // * This is for odata
+
       this.formService.populateForm({
-        fromEmployee: `${this.selectedRows[0].fromEmployeeName} (P${this.selectedRows[0].fromEmployeeCode})`,
-        toEmployee: `${this.selectedRows[0].toEmployeeName} (P${this.selectedRows[0].toEmployeeCode})`,
-        fromDate: `${this.selectedRows[0].fromDate}`,
-        toDate: `${this.selectedRows[0].toDate}`,
+        fromEmployee: `${this.selectedRows[0].EnameFrom} (P${this.selectedRows[0].PernrFrom})`,
+        toEmployee: `${this.selectedRows[0].EnameTo} (P${this.selectedRows[0].PernrTo})`,
+        fromDate: `${this.selectedRows[0].Begda}`, //* Needs to changes the date format
+        toDate: `${this.selectedRows[0].Endda}`, //* Needs to changes the date
         cancel: false,
       });
+      // *This is for nodejs data
+      // this.formService.populateForm({
+      //   fromEmployee: `${this.selectedRows[0].fromEmployeeName} (P${this.selectedRows[0].fromEmployeeCode})`,
+      //   toEmployee: `${this.selectedRows[0].toEmployeeName} (P${this.selectedRows[0].toEmployeeCode})`,
+      //   fromDate: `${this.selectedRows[0].fromDate}`,
+      //   toDate: `${this.selectedRows[0].toDate}`,
+      //   cancel: false,
+      // });
       this.openDialog(true); //*Cancel Button should be enabled
     }
   }
@@ -100,21 +141,26 @@ export class TableComponent implements OnInit {
     // dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
     dialogConfig.width = '60%';
+    // dialogConfig.scrollStrategy.enable()
     dialogConfig.minWidth = '600px';
     if (!value) {
+      //* For opening new request
       this.formService.initializeFormGroup();
       const dialogRef = this.dialog.open(FormComponent, dialogConfig);
       dialogRef.afterClosed().subscribe((result) => {
-        // console.log(result);
+        //* console.log(result);
+        // *Have called the post new request api in form component itself
         if (result === 1) {
           this.getOverviewData();
         }
       });
     } else {
+      //* For opening delete request
       const dialogRef = this.dialog.open(DeleteRequestComponent, dialogConfig);
       dialogRef.afterClosed().subscribe((result) => {
         if (result) {
-          // console.log(this.selectedRows[0]);
+          // * Pls call the delete request api here.The data is in (this.selectedRows[0])
+          console.log(this.selectedRows[0]);
           this.formService
             .deleteRequest(this.selectedRows[0])
             .subscribe((response) => {

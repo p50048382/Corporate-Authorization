@@ -79,4 +79,7 @@ export class FormService {
   getColleagues() {
     return this.http.get('http://localhost:3000/colleagues');
   }
+  getOdataColleagues() {
+    return this.http.get('http://localhost:3000/odataColleagues');
+  }
 }

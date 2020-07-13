@@ -1,0 +1,81 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xml:base="https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/">
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/RequesterDisplaySet
+</id>
+<title type="text">RequesterDisplaySet</title>
+<updated>2020-07-09T15:29:41Z</updated>
+<author>
+<name/>
+</author>
+<link href="RequesterDisplaySet" rel="self" title="RequesterDisplaySet"/>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/RequesterDisplaySet(PernrFrom='50000477',PernrTo='50000480',Begda=datetime'2020-07-14T00%3A00%3A00',Endda=datetime'2020-07-20T00%3A00%3A00')
+</id>
+<title type="text">
+RequesterDisplaySet(PernrFrom='50000477',PernrTo='50000480',Begda=datetime'2020-07-14T00%3A00%3A00',Endda=datetime'2020-07-20T00%3A00%3A00')
+</title>
+<updated>2020-07-09T15:29:41Z</updated>
+<category term="ZAUTH_TEMP_SRV.RequesterDisplay" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="RequesterDisplaySet(PernrFrom='50000477',PernrTo='50000480',Begda=datetime'2020-07-14T00%3A00%3A00',Endda=datetime'2020-07-20T00%3A00%3A00')" rel="self" title="RequesterDisplay"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:PernrFrom>50000477</d:PernrFrom>
+<d:PernrTo>50000480</d:PernrTo>
+<d:Begda>2020-07-14T00:00:00</d:Begda>
+<d:Endda>2020-07-20T00:00:00</d:Endda>
+<d:EnameFrom>Anamika Kumari</d:EnameFrom>
+<d:EnameTo>Anamika Kumari</d:EnameTo>
+<d:Cancelled/>
+<d:ApproverPernr>55002704</d:ApproverPernr>
+<d:EnameApprover>Raghvendra Singh</d:EnameApprover>
+<d:Status>Pending</d:Status>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/RequesterDisplaySet(PernrFrom='50001874',PernrTo='50001268',Begda=datetime'2020-07-09T00%3A00%3A00',Endda=datetime'2020-07-20T00%3A00%3A00')
+</id>
+<title type="text">
+RequesterDisplaySet(PernrFrom='50001874',PernrTo='50001268',Begda=datetime'2020-07-09T00%3A00%3A00',Endda=datetime'2020-07-20T00%3A00%3A00')
+</title>
+<updated>2020-07-09T15:29:41Z</updated>
+<category term="ZAUTH_TEMP_SRV.RequesterDisplay" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="RequesterDisplaySet(PernrFrom='50001874',PernrTo='50001268',Begda=datetime'2020-07-09T00%3A00%3A00',Endda=datetime'2020-07-20T00%3A00%3A00')" rel="self" title="RequesterDisplay"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:PernrFrom>50001874</d:PernrFrom>
+<d:PernrTo>50001268</d:PernrTo>
+<d:Begda>2020-07-09T00:00:00</d:Begda>
+<d:Endda>2020-07-20T00:00:00</d:Endda>
+<d:EnameFrom>Apurva Apurva Salpekar</d:EnameFrom>
+<d:EnameTo>Brands Test</d:EnameTo>
+<d:Cancelled/>
+<d:ApproverPernr>50002103</d:ApproverPernr>
+<d:EnameApprover>Janany Shetty</d:EnameApprover>
+<d:Status>Pending</d:Status>
+</m:properties>
+</content>
+</entry>
+</feed>

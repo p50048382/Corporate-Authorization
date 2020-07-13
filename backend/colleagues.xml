@@ -1,0 +1,1411 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xml:base="https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/">
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet
+</id>
+<title type="text">SubOrdinatesSet</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<author>
+<name/>
+</author>
+<link href="SubOrdinatesSet" rel="self" title="SubOrdinatesSet"/>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000452')
+</id>
+<title type="text">SubOrdinatesSet('50000452')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000452')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000452</d:Pernr>
+<d:Ename>Anamika Kumari (50000452)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000462')
+</id>
+<title type="text">SubOrdinatesSet('50000462')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000462')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000462</d:Pernr>
+<d:Ename>Anamika Kumari (50000462)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000476')
+</id>
+<title type="text">SubOrdinatesSet('50000476')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000476')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000476</d:Pernr>
+<d:Ename>Anamika Kumari (50000476)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000477')
+</id>
+<title type="text">SubOrdinatesSet('50000477')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000477')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000477</d:Pernr>
+<d:Ename>Anamika Kumari (50000477)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000480')
+</id>
+<title type="text">SubOrdinatesSet('50000480')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000480')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000480</d:Pernr>
+<d:Ename>Anamika Kumari (50000480)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50001874')
+</id>
+<title type="text">SubOrdinatesSet('50001874')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50001874')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50001874</d:Pernr>
+<d:Ename>Apurva Apurva Salpekar (50001874)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('55000186')
+</id>
+<title type="text">SubOrdinatesSet('55000186')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('55000186')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>55000186</d:Pernr>
+<d:Ename>Associate Testing (55000186)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50001268')
+</id>
+<title type="text">SubOrdinatesSet('50001268')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50001268')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50001268</d:Pernr>
+<d:Ename>Brands Test (50001268)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50001779')
+</id>
+<title type="text">SubOrdinatesSet('50001779')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50001779')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50001779</d:Pernr>
+<d:Ename>Confirmation Test (50001779)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000739')
+</id>
+<title type="text">SubOrdinatesSet('50000739')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000739')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000739</d:Pernr>
+<d:Ename>ESIC 137 Testing (50000739)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('53000617')
+</id>
+<title type="text">SubOrdinatesSet('53000617')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('53000617')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>53000617</d:Pernr>
+<d:Ename>GRK3 Testing (53000617)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50001693')
+</id>
+<title type="text">SubOrdinatesSet('50001693')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50001693')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50001693</d:Pernr>
+<d:Ename>Gaurav Prabhu (50001693)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('55000171')
+</id>
+<title type="text">SubOrdinatesSet('55000171')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('55000171')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>55000171</d:Pernr>
+<d:Ename>Gunjan Rajput (55000171)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('10013487')
+</id>
+<title type="text">SubOrdinatesSet('10013487')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('10013487')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>10013487</d:Pernr>
+<d:Ename>Hiten Panchal (10013487)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000752')
+</id>
+<title type="text">SubOrdinatesSet('50000752')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000752')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000752</d:Pernr>
+<d:Ename>Hitesh bhu (50000752)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('53001462')
+</id>
+<title type="text">SubOrdinatesSet('53001462')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('53001462')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>53001462</d:Pernr>
+<d:Ename>Juhi Chawla (53001462)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000749')
+</id>
+<title type="text">SubOrdinatesSet('50000749')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000749')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000749</d:Pernr>
+<d:Ename>Juhi Dila (50000749)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('10058325')
+</id>
+<title type="text">SubOrdinatesSet('10058325')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('10058325')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>10058325</d:Pernr>
+<d:Ename>Nagamunaiah Ravuru (10058325)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000483')
+</id>
+<title type="text">SubOrdinatesSet('50000483')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000483')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000483</d:Pernr>
+<d:Ename>Neha Vedantwar (50000483)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000484')
+</id>
+<title type="text">SubOrdinatesSet('50000484')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000484')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000484</d:Pernr>
+<d:Ename>Neha Vedantwar (50000484)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000485')
+</id>
+<title type="text">SubOrdinatesSet('50000485')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000485')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000485</d:Pernr>
+<d:Ename>Neha Vedantwar (50000485)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000486')
+</id>
+<title type="text">SubOrdinatesSet('50000486')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000486')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000486</d:Pernr>
+<d:Ename>Neha Vedantwar (50000486)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000488')
+</id>
+<title type="text">SubOrdinatesSet('50000488')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000488')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000488</d:Pernr>
+<d:Ename>Neha Vedantwar (50000488)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000495')
+</id>
+<title type="text">SubOrdinatesSet('50000495')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000495')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000495</d:Pernr>
+<d:Ename>Neha Vedantwar (50000495)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000496')
+</id>
+<title type="text">SubOrdinatesSet('50000496')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000496')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000496</d:Pernr>
+<d:Ename>Neha Vedantwar (50000496)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000498')
+</id>
+<title type="text">SubOrdinatesSet('50000498')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000498')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000498</d:Pernr>
+<d:Ename>Neha Vedantwar (50000498)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000499')
+</id>
+<title type="text">SubOrdinatesSet('50000499')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000499')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000499</d:Pernr>
+<d:Ename>Neha Vedantwar (50000499)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000500')
+</id>
+<title type="text">SubOrdinatesSet('50000500')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000500')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000500</d:Pernr>
+<d:Ename>Neha Vedantwar (50000500)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50001809')
+</id>
+<title type="text">SubOrdinatesSet('50001809')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50001809')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50001809</d:Pernr>
+<d:Ename>Office uniform (50001809)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000755')
+</id>
+<title type="text">SubOrdinatesSet('50000755')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000755')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000755</d:Pernr>
+<d:Ename>Priyanka gupta (50000755)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('00000321')
+</id>
+<title type="text">SubOrdinatesSet('00000321')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('00000321')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>00000321</d:Pernr>
+<d:Ename>RINWA ANAND (00000321)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('53001368')
+</id>
+<title type="text">SubOrdinatesSet('53001368')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('53001368')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>53001368</d:Pernr>
+<d:Ename>Rahul Barve (53001368)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('59000017')
+</id>
+<title type="text">SubOrdinatesSet('59000017')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('59000017')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>59000017</d:Pernr>
+<d:Ename>Rajarajan kkk (59000017)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('65000006')
+</id>
+<title type="text">SubOrdinatesSet('65000006')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('65000006')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>65000006</d:Pernr>
+<d:Ename>Rajesh Soni (65000006)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('58040004')
+</id>
+<title type="text">SubOrdinatesSet('58040004')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('58040004')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>58040004</d:Pernr>
+<d:Ename>Ruchi Patel (58040004)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('00000326')
+</id>
+<title type="text">SubOrdinatesSet('00000326')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('00000326')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>00000326</d:Pernr>
+<d:Ename>Sachin Kumar (00000326)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000165')
+</id>
+<title type="text">SubOrdinatesSet('50000165')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000165')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000165</d:Pernr>
+<d:Ename>Sachin tendulkar (50000165)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000244')
+</id>
+<title type="text">SubOrdinatesSet('50000244')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000244')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000244</d:Pernr>
+<d:Ename>Shashank Modi (50000244)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000445')
+</id>
+<title type="text">SubOrdinatesSet('50000445')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000445')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000445</d:Pernr>
+<d:Ename>Shrabani Mandal (50000445)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000481')
+</id>
+<title type="text">SubOrdinatesSet('50000481')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000481')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000481</d:Pernr>
+<d:Ename>Shrabani Mandal (50000481)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('10053260')
+</id>
+<title type="text">SubOrdinatesSet('10053260')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('10053260')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>10053260</d:Pernr>
+<d:Ename>Snehal Parate (10053260)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000243')
+</id>
+<title type="text">SubOrdinatesSet('50000243')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000243')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000243</d:Pernr>
+<d:Ename>Swati Shah (50000243)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50004080')
+</id>
+<title type="text">SubOrdinatesSet('50004080')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50004080')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50004080</d:Pernr>
+<d:Ename>Sweta sahoo (50004080)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('00000401')
+</id>
+<title type="text">SubOrdinatesSet('00000401')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('00000401')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>00000401</d:Pernr>
+<d:Ename>TRAVEL TEST 1 (00000401)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50004090')
+</id>
+<title type="text">SubOrdinatesSet('50004090')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50004090')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50004090</d:Pernr>
+<d:Ename>Thrimurthulu Abbu (50004090)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000163')
+</id>
+<title type="text">SubOrdinatesSet('50000163')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000163')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000163</d:Pernr>
+<d:Ename>Vinod Khana (50000163)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50001885')
+</id>
+<title type="text">SubOrdinatesSet('50001885')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50001885')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50001885</d:Pernr>
+<d:Ename>nokia Mobile (50001885)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000426')
+</id>
+<title type="text">SubOrdinatesSet('50000426')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000426')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000426</d:Pernr>
+<d:Ename>sagarika srivastava (50000426)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000430')
+</id>
+<title type="text">SubOrdinatesSet('50000430')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000430')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000430</d:Pernr>
+<d:Ename>sagarika srivastava (50000430)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000431')
+</id>
+<title type="text">SubOrdinatesSet('50000431')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000431')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000431</d:Pernr>
+<d:Ename>sagarika srivastava (50000431)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000432')
+</id>
+<title type="text">SubOrdinatesSet('50000432')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000432')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000432</d:Pernr>
+<d:Ename>sagarika srivastava (50000432)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000433')
+</id>
+<title type="text">SubOrdinatesSet('50000433')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000433')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000433</d:Pernr>
+<d:Ename>sagarika srivastava (50000433)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000435')
+</id>
+<title type="text">SubOrdinatesSet('50000435')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000435')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000435</d:Pernr>
+<d:Ename>sagarika srivastava (50000435)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000437')
+</id>
+<title type="text">SubOrdinatesSet('50000437')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000437')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000437</d:Pernr>
+<d:Ename>sagarika srivastava (50000437)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000443')
+</id>
+<title type="text">SubOrdinatesSet('50000443')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000443')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000443</d:Pernr>
+<d:Ename>sagarika srivastava (50000443)</d:Ename>
+</m:properties>
+</content>
+</entry>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/SubOrdinatesSet('50000444')
+</id>
+<title type="text">SubOrdinatesSet('50000444')</title>
+<updated>2020-07-10T09:15:23Z</updated>
+<category term="ZAUTH_TEMP_SRV.SubOrdinates" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="SubOrdinatesSet('50000444')" rel="self" title="SubOrdinates"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:ImUname/>
+<d:Type/>
+<d:Code/>
+<d:Message/>
+<d:LogNo/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:MessageV1/>
+<d:MessageV2/>
+<d:MessageV3/>
+<d:MessageV4/>
+<d:Pernr>50000444</d:Pernr>
+<d:Ename>sagarika srivastava (50000444)</d:Ename>
+</m:properties>
+</content>
+</entry>
+</feed>

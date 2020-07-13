@@ -1,4 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
+import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 
 import { NotificationService } from 'src/app/shared/notification.service';
 import { FormService } from 'src/app/shared/form.service';
@@ -7,10 +8,15 @@ import { HomeComponent } from '../home.component';
 
 @Component({
   selector: 'app-form',
-  templateUrl: './form.component.html',
+  // templateUrl: './form.component.html',
+  templateUrl: './odataForm.component.html',
   styleUrls: ['./form.component.css'],
 })
 export class FormComponent implements OnInit {
+  minFromDate: Date;
+  maxFromDate: Date;
+  minToDate: Date;
+  maxToDate: Date;
   colleagues: any = [];
   fromCollegues: any = [];
   toCollegues: any = [];
@@ -18,40 +24,88 @@ export class FormComponent implements OnInit {
     public formService: FormService,
     public dialogRef: MatDialogRef<HomeComponent>,
     private notificationService: NotificationService
-  ) {}
+  ) {
+    this.setDate();
+  }
 
   ngOnInit(): void {
     // console.log(this.formService.form.value);
+
     this.getColleaguesData();
   }
+  setDate() {
+    this.minFromDate = new Date();
+    this.maxFromDate = new Date(9999, 12, 31);
+    this.minToDate = new Date();
+    this.maxToDate = new Date(9999, 12, 31);
+  }
+  validateDate1(type: string, event: MatDatepickerInputEvent<Date>) {
+    // console.log(event.value);
+    this.minToDate = event.value;
+  }
+  validateDate2(type: string, event) {
+    this.maxFromDate = event.value;
+  }
+
   getColleaguesData() {
-    this.formService.getColleagues().subscribe((response) => {
-      this.colleagues = response;
+    // *1. This is for odata
+    this.formService.getOdataColleagues().subscribe((res) => {
+      let array = [];
+      res['entry'].forEach((colleage) => {
+        array.push(colleage['content']['properties']);
+      });
+
+      // console.log(array);
+      this.colleagues = array;
       this.fromCollegues = [...this.colleagues];
       this.toCollegues = [...this.colleagues];
     });
+    // *2. This is for nodejs
+    // this.formService.getColleagues().subscribe((response) => {
+    //   this.colleagues = response;
+    //   this.fromCollegues = [...this.colleagues];
+    //   this.toCollegues = [...this.colleagues];
+    // });
   }
   onFromColleagueChange(fromColleageInput) {
-    // * change in toCollegues drop down array
+    // *1. odata binding
+    // console.log(fromColleageInput);
     this.toCollegues = [...this.colleagues];
     this.toCollegues.splice(
-      this.toCollegues.findIndex((x) => x.eCode === fromColleageInput.value),
+      this.toCollegues.findIndex((x) => x.Ename === fromColleageInput.value),
       1
     );
+    // *2.Nodejs change in toCollegues drop down array
+    // this.toCollegues = [...this.colleagues];
+    // this.toCollegues.splice(
+    //   this.toCollegues.findIndex((x) => x.eCode === fromColleageInput.value),
+    //   1
+    // );
   }
   onToColleagueChange(toColleageInput) {
-    // * change in fromCollegues drop down array
+    // *1. odata binding
+
+    // console.log(toColleageInput);
     this.fromCollegues = [...this.colleagues];
     this.fromCollegues.splice(
-      this.fromCollegues.findIndex((x) => x.eCode === toColleageInput.value),
+      this.fromCollegues.findIndex((x) => x.Ename === toColleageInput.value),
       1
     );
+    // *2.nodejs change in fromCollegues drop down array
+    // this.fromCollegues = [...this.colleagues];
+    // this.fromCollegues.splice(
+    //   this.fromCollegues.findIndex((x) => x.eCode === toColleageInput.value),
+    //   1
+    // );
   }
   onSubmit() {
     this.postData();
   }
   postData() {
     let fromValues = this.formService.form.getRawValue();
+    // *Kindly call the post data api here and post this data for new request. Modify the data according to the required format The from values contains the new data.
+    console.log(fromValues);
+    // *Ignore the below codes
     let data = {
       fromDate: getParsedDate(fromValues.fromDate),
       toDate: getParsedDate(fromValues.toDate),
@@ -76,6 +130,7 @@ export class FormComponent implements OnInit {
   }
   clearForm() {
     this.formService.form.reset();
+    this.setDate();
     this.fromCollegues = [...this.colleagues];
     this.toCollegues = [...this.colleagues];
   }

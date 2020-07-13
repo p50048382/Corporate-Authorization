@@ -12,10 +12,29 @@ import { DialogComponent } from './dialog/dialog.component';
 
 @Component({
   selector: 'app-table',
-  templateUrl: './table.component.html',
+  // templateUrl: './table.component.html',
+  templateUrl: './odataTable.component.html',
   styleUrls: ['./table.component.css'],
 })
 export class TableComponent implements OnInit {
+  odataDisplayedColumns: string[] = [
+    'select',
+    'Begda',
+    'Endda',
+    'PernrFrom',
+    'EnameFrom',
+    'BusinessFrom',
+    'ClassFrom',
+    'PernrTo',
+    'EnameTo',
+    'BusinessTo',
+    'ClassTo',
+    'PernrRequester',
+    'EnameRequester',
+    'RequestDate',
+  ];
+  odataDataSource: any = null;
+
   displayedColumns: string[] = [
     'select',
     'fromDate',
@@ -33,6 +52,7 @@ export class TableComponent implements OnInit {
     'requestedDate',
   ];
   dataSource: any = null;
+
   selection = new SelectionModel(true, []);
   selectedRows = [];
   constructor(
@@ -45,42 +65,65 @@ export class TableComponent implements OnInit {
     this.getPendingData();
   }
   getPendingData() {
-    this.dataSource = [];
-    this.dataService.getPendingRequests().subscribe(
-      (response: []) => {
-        // console.log('Called Again');
+    // *Working with odata
+    this.odataDataSource = null;
+    this.dataService.getOdataPendingRequests().subscribe((response) => {
+      this.odataDataSource = [];
+      // console.log(response);
+      let array = [];
+      // response['entry'].forEach((element) => {
+      //   array.push(element['content']['properties']);
+      // });
+      array.push(response['entry']['content']['properties']);
+      this.odataDataSource = new MatTableDataSource(array);
+      // console.log(this.odataDataSource);
+    });
 
-        this.dataSource = new MatTableDataSource(
-          response.map((res: {}) => {
-            let newObj = res;
-            newObj['fromBusiness'] = 'Retail';
-            newObj['fromBusinessClass'] = 'SAP HR';
-            newObj['toBusiness'] = 'Retail';
-            newObj['toBusinessClass'] = 'Retail HR';
-            newObj['requesterCode'] = '50048382';
-            newObj['requesterName'] = 'Hiten Panchal';
-            newObj['requestedDate'] = new Date();
-            return newObj;
-          })
-        );
-        console.log(this.dataSource);
-      },
-      (error) => {
-        this.dataSource = [];
-        this.notificationService.warn(':: Error in retrieving data!!');
-      }
-    );
+    // *This is for nodejs data
+    // this.dataSource = [];
+    // this.dataService.getPendingRequests().subscribe(
+    //   (response: []) => {
+    //     // console.log('Called Again');
+
+    //     this.dataSource = new MatTableDataSource(
+    //       response.map((res: {}) => {
+    //         let newObj = res;
+    //         newObj['fromBusiness'] = 'Retail';
+    //         newObj['fromBusinessClass'] = 'SAP HR';
+    //         newObj['toBusiness'] = 'Retail';
+    //         newObj['toBusinessClass'] = 'Retail HR';
+    //         newObj['requesterCode'] = '50048382';
+    //         newObj['requesterName'] = 'Hiten Panchal';
+    //         newObj['requestedDate'] = new Date();
+    //         return newObj;
+    //       })
+    //     );
+    //     // console.log(this.dataSource);
+    //   },
+    //   (error) => {
+    //     this.dataSource = [];
+    //     this.notificationService.warn(':: Error in retrieving data!!');
+    //   }
+    // );
   }
   isAllSelected() {
-    // console.log(this.dataSource);
     const numSelected = this.selection.selected.length;
-    const numRows = this.dataSource.data.length;
+    const numRows = this.odataDataSource.data.length;
     return numSelected === numRows;
+    // *Working nodejs data
+    // const numSelected = this.selection.selected.length;
+    // const numRows = this.dataSource.data.length;
+    // return numSelected === numRows;
   }
   selectAll() {
     this.isAllSelected()
       ? this.selection.clear()
-      : this.dataSource.data.forEach((row) => this.selection.select(row));
+      : this.odataDataSource.data.forEach((row) => this.selection.select(row));
+
+    //  * Nodejs data
+    // this.isAllSelected()
+    //   ? this.selection.clear()
+    //   : this.dataSource.data.forEach((row) => this.selection.select(row));
   }
 
   openDialog(value) {
@@ -113,8 +156,11 @@ export class TableComponent implements OnInit {
 
   approveRequest() {
     let finalData = JSON.parse(JSON.stringify(this.selection.selected));
-    this.getFinalData(finalData);
+    console.log(finalData); //* post this final data to backend in the format asked.
+    // this.getFinalData(finalData);
     // console.log(finalData);
+
+    // *Kindly call the post approval api here all the selected data is in final data
     this.dataService.approveRequests(finalData).subscribe(
       (response) => {
         // console.log(response);
@@ -122,13 +168,15 @@ export class TableComponent implements OnInit {
         this.notificationService.primary(':: Approved successfully!!');
       },
       (error) => {
+        // * Harphool was asking to open a dialog here incase there was error in approving some of the requests.  and show the in the table the requests that havent been approved successfully. He was saying that multiple requests can be approved simultaneously so some requests may have some issues.
         this.notificationService.warn(':: Error while approving requests!!');
       }
     );
   }
   rejectRequest() {
     let finalData = JSON.parse(JSON.stringify(this.selection.selected));
-    this.getFinalData(finalData);
+    // this.getFinalData(finalData);
+    console.log(finalData); //* post this final data to backend in the format asked.
     // console.log(finalData);
     this.dataService.rejectRequests(finalData).subscribe(
       (response) => {
@@ -137,6 +185,7 @@ export class TableComponent implements OnInit {
         this.notificationService.info(':: Rejected successfully!!');
       },
       (error) => {
+        // * Harphool was asking to open a dialog here incase there was error in rejecting some of the requests.  and show the in the table the requests that havent been rejected successfully
         this.notificationService.warn(':: Error while rejecting requests!!');
       }
     );

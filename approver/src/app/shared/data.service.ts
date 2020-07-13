@@ -8,6 +8,11 @@ export class DataService {
   approve_reject: boolean;
   constructor(private http: HttpClient) {}
 
+  // *Working with odata
+  getOdataPendingRequests() {
+    return this.http.get('http://localhost:3000/odataPendingRequests');
+  }
+
   getPendingRequests() {
     return this.http.get('http://localhost:3000/pendingRequests');
   }

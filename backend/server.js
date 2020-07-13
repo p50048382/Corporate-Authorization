@@ -1,7 +1,9 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
-
+var odataPastRequests = require("./odata");
+var odataColleagues = require("./odataColleagues");
+var approverOData = require("./approver");
 var colleagues = [
   {
     name: "Dilshad Ahmad",
@@ -65,7 +67,24 @@ app.use(function (req, res, next) {
   );
   next();
 });
+// * Working with odata
 
+// *1. Pending odata requests
+app.get("/odataPastRequests", (req, res, next) => {
+  res.json(odataPastRequests);
+});
+
+// *2. odata Colleagues
+app.get("/odataColleagues", (req, res, next) => {
+  res.json(odataColleagues);
+});
+
+// *3. odata for approver
+app.get("/odataPendingRequests", (req, res, next) => {
+  res.json(approverOData);
+});
+
+// *Everything below working fine
 // * Working for requester api
 app.get("/pastRequests", (req, res, next) => {
   res.json(pastRequests);

@@ -1,0 +1,49 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xml:base="https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/">
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/ApproverDisplaySet
+</id>
+<title type="text">ApproverDisplaySet</title>
+<updated>2020-07-13T11:30:43Z</updated>
+<author>
+<name/>
+</author>
+<link href="ApproverDisplaySet" rel="self" title="ApproverDisplaySet"/>
+<entry>
+<id>
+https://rrnwgwdev.ril.com/sap/opu/odata/sap/ZAUTH_TEMP_SRV/ApproverDisplaySet(PernrTo='50001268',PernrFrom='50001874')
+</id>
+<title type="text">
+ApproverDisplaySet(PernrTo='50001268',PernrFrom='50001874')
+</title>
+<updated>2020-07-13T11:30:43Z</updated>
+<category term="ZAUTH_TEMP_SRV.ApproverDisplay" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+<link href="ApproverDisplaySet(PernrTo='50001268',PernrFrom='50001874')" rel="self" title="ApproverDisplay"/>
+<content type="application/xml">
+<m:properties xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices">
+<d:RequestDate>2020-07-10T00:00:00</d:RequestDate>
+<d:EnameRequester>Janany Shetty</d:EnameRequester>
+<d:PernrRequester>50002103</d:PernrRequester>
+<d:ClassTo/>
+<d:ClassFrom/>
+<d:BusinessTo/>
+<d:BusinessFrom/>
+<d:EnameTo>Brands Test</d:EnameTo>
+<d:EnameFrom>Apurva Apurva Salpekar</d:EnameFrom>
+<d:Endda>2020-07-21T00:00:00</d:Endda>
+<d:Begda>2020-07-09T00:00:00</d:Begda>
+<d:PernrTo>50001268</d:PernrTo>
+<d:PernrFrom>50001874</d:PernrFrom>
+<d:MessageV4/>
+<d:MessageV3/>
+<d:MessageV2/>
+<d:MessageV1/>
+<d:LogMsgNo>000000</d:LogMsgNo>
+<d:LogNo/>
+<d:Message/>
+<d:Code/>
+<d:Type/>
+<d:ImUname/>
+</m:properties>
+</content>
+</entry>
+</feed>

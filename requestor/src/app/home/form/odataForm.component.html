@@ -17,9 +17,9 @@
             (selectionChange)="onFromColleagueChange(fromColleageInput)"
           >
             <ng-container *ngFor="let colleage of fromCollegues">
-              <mat-option value="{{ colleage.eCode }}"
-                >{{ colleage.name }} (P{{ colleage.eCode }})</mat-option
-              >
+              <mat-option value="{{ colleage.Ename }}"
+                >{{ colleage.Ename }}
+              </mat-option>
             </ng-container>
           </mat-select>
         </mat-form-field>
@@ -52,9 +52,9 @@
             (selectionChange)="onToColleagueChange(toColleageInput)"
           >
             <ng-container *ngFor="let colleage of toCollegues">
-              <mat-option value="{{ colleage.eCode }}"
-                >{{ colleage.name }} (P{{ colleage.eCode }})</mat-option
-              >
+              <mat-option value="{{ colleage.Ename }}"
+                >{{ colleage.Ename }}
+              </mat-option>
             </ng-container>
           </mat-select>
         </mat-form-field>
@@ -78,8 +78,8 @@
       </div>
     </mat-grid-tile>
     <!-- <mat-grid-tile colspan="2" rowspan="1" style="justify-content: flex-start;">
-      
-    </mat-grid-tile> -->
+        
+      </mat-grid-tile> -->
     <mat-grid-tile colspan="2" rowspan="1">
       <div class="button-row">
         <mat-checkbox
