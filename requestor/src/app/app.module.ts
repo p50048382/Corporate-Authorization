@@ -12,9 +12,16 @@ import { TableComponent } from './home/table/table.component';
 import { FormComponent } from './home/form/form.component';
 import { OverviewService } from './shared/overview.service';
 import { DeleteRequestComponent } from './home/delete-request/delete-request.component';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, TableComponent, FormComponent, DeleteRequestComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    TableComponent,
+    FormComponent,
+    DeleteRequestComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -24,6 +31,7 @@ import { DeleteRequestComponent } from './home/delete-request/delete-request.com
     HttpClientModule,
   ],
   providers: [
+    DatePipe,
     OverviewService,
     [{ provide: MAT_DATE_LOCALE, useValue: 'en-IN' }],
   ],

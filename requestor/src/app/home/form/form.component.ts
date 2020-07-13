@@ -104,7 +104,15 @@ export class FormComponent implements OnInit {
   postData() {
     let fromValues = this.formService.form.getRawValue();
     // *Kindly call the post data api here and post this data for new request. Modify the data according to the required format The from values contains the new data.
-    console.log(fromValues);
+    // console.log(fromValues);
+    let payload = {
+      PernrFrom: fromValues.fromEmployee,
+      PernrTo: fromValues.toEmployee,
+      StartDate: fromValues.fromDate.getTime(), //*Convert it as required by backend
+      EndDate: fromValues.toDate.getTime(),
+      Mode: 'INS',
+    };
+    console.log(payload);
     // *Ignore the below codes
     let data = {
       fromDate: getParsedDate(fromValues.fromDate),
@@ -114,6 +122,8 @@ export class FormComponent implements OnInit {
       toEmployeeCode: fromValues.toEmployee,
       toEmployeeName: this.findEmployeeName(fromValues.toEmployee),
     };
+
+    // * Call the post new request api here
     this.formService.postNewRequest(data).subscribe((res) => {
       if (res.status == 200) {
         this.formService.form.reset();

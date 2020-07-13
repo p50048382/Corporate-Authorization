@@ -74,6 +74,7 @@ export class TableComponent implements OnInit {
       // response['entry'].forEach((element) => {
       //   array.push(element['content']['properties']);
       // });
+      // * Kindly write foreach method if there are multiple request
       array.push(response['entry']['content']['properties']);
       this.odataDataSource = new MatTableDataSource(array);
       // console.log(this.odataDataSource);

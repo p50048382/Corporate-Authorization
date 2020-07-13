@@ -3,6 +3,7 @@ import { Router, Scroll } from '@angular/router';
 import { OverviewService } from 'src/app/shared/overview.service';
 import { NotificationService } from 'src/app/shared/notification.service';
 import { MatTableDataSource } from '@angular/material/table';
+import { DatePipe } from '@angular/common';
 import {
   MatDialog,
   MatDialogRef,
@@ -52,7 +53,8 @@ export class TableComponent implements OnInit {
     public formService: FormService,
     private overviewService: OverviewService,
     private notificationService: NotificationService,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private datePipe: DatePipe
   ) {}
 
   ngOnInit() {
@@ -75,7 +77,7 @@ export class TableComponent implements OnInit {
       this.odataDataSource = new MatTableDataSource(array);
     });
 
-    // * This is for nodejs data
+    // * This is for nodejs data comment this
     this.overviewService.getPastRequests().subscribe(
       (response) => {
         this.dataSource = response;
@@ -117,10 +119,16 @@ export class TableComponent implements OnInit {
       // * This is for odata
 
       this.formService.populateForm({
-        fromEmployee: `${this.selectedRows[0].EnameFrom} (P${this.selectedRows[0].PernrFrom})`,
-        toEmployee: `${this.selectedRows[0].EnameTo} (P${this.selectedRows[0].PernrTo})`,
-        fromDate: `${this.selectedRows[0].Begda}`, //* Needs to changes the date format
-        toDate: `${this.selectedRows[0].Endda}`, //* Needs to changes the date
+        fromEmployee: `${this.selectedRows[0].EnameFrom} (${this.selectedRows[0].PernrFrom})`,
+        toEmployee: `${this.selectedRows[0].EnameTo} (${this.selectedRows[0].PernrTo})`,
+        fromDate: `${this.datePipe.transform(
+          new Date(this.selectedRows[0].Begda),
+          'MMMM d, y'
+        )}`, //* Needs to changes the date format
+        toDate: `${this.datePipe.transform(
+          new Date(this.selectedRows[0].Endda),
+          'MMMM d, y'
+        )}`, //* Needs to changes the date
         cancel: false,
       });
       // *This is for nodejs data
@@ -159,23 +167,37 @@ export class TableComponent implements OnInit {
       const dialogRef = this.dialog.open(DeleteRequestComponent, dialogConfig);
       dialogRef.afterClosed().subscribe((result) => {
         if (result) {
+          // *Put this in a different function if unable to read
           // * Pls call the delete request api here.The data is in (this.selectedRows[0])
-          console.log(this.selectedRows[0]);
-          this.formService
-            .deleteRequest(this.selectedRows[0])
-            .subscribe((response) => {
-              if (response.status == 200) {
-                this.formService.form.reset();
-                this.notificationService.success(`:: ${response.message}`);
-                this.getOverviewData();
-              } else {
-                this.notificationService.info(
-                  ':: Bad Request, Kindly Submit Again!!'
-                );
-              }
-            });
+          this.postCancelRequest();
         }
       });
     }
+  }
+
+  postCancelRequest() {
+    console.log(this.selectedRows[0]);
+    let payload = {
+      PernrFrom: this.selectedRows[0].PernrFrom,
+      PernrTo: this.selectedRows[0].PernrTo,
+      StartDate: new Date(this.selectedRows[0].Begda).getTime(), //*Convert it as per requirement
+      EndDate: new Date(this.selectedRows[0].Endda).getTime(),
+      Mode: 'CAN',
+    };
+    console.log(payload);
+    // *Kindly send this payload for deleting request
+    this.formService
+      .deleteRequest(this.selectedRows[0])
+      .subscribe((response) => {
+        if (response.status == 200) {
+          this.formService.form.reset();
+          this.notificationService.success(`:: ${response.message}`);
+          this.getOverviewData();
+        } else {
+          this.notificationService.info(
+            ':: Bad Request, Kindly Submit Again!!'
+          );
+        }
+      });
   }
 }

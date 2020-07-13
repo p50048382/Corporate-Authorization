@@ -17,7 +17,7 @@
             (selectionChange)="onFromColleagueChange(fromColleageInput)"
           >
             <ng-container *ngFor="let colleage of fromCollegues">
-              <mat-option value="{{ colleage.Ename }}"
+              <mat-option value="{{ colleage.Pernr }}"
                 >{{ colleage.Ename }}
               </mat-option>
             </ng-container>
@@ -52,7 +52,7 @@
             (selectionChange)="onToColleagueChange(toColleageInput)"
           >
             <ng-container *ngFor="let colleage of toCollegues">
-              <mat-option value="{{ colleage.Ename }}"
+              <mat-option value="{{ colleage.Pernr }}"
                 >{{ colleage.Ename }}
               </mat-option>
             </ng-container>
