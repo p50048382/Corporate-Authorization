@@ -46,7 +46,7 @@ export class TableComponent implements OnInit {
   ];
   dataSource: any = null;
   selectedRows = [];
-
+  csrfToken = '';
   // *Working with odata
   odataDataSource: any = null;
   constructor(
@@ -67,8 +67,8 @@ export class TableComponent implements OnInit {
 
     // *This is for odata
     this.overviewService.getOdataPastRequests().subscribe((response) => {
+      // this.csrfToken = response.headers.get('X-CSRF-Token');
       this.odataDataSource = [];
-      // console.log(response);
       let array = [];
       response['entry'].forEach((element) => {
         array.push(element['content']['properties']);
@@ -78,18 +78,18 @@ export class TableComponent implements OnInit {
     });
 
     // * This is for nodejs data comment this
-    this.overviewService.getPastRequests().subscribe(
-      (response) => {
-        this.dataSource = response;
-        this.dataSource = new MatTableDataSource(this.dataSource);
-      },
-      (error) => {
-        console.log(error);
-        this.notificationService.config.duration = 10000;
-        this.notificationService.warn(`Error 404 : Not found`);
-        this.dataSource = [];
-      }
-    );
+    // this.overviewService.getPastRequests().subscribe(
+    //   (response) => {
+    //     this.dataSource = response;
+    //     this.dataSource = new MatTableDataSource(this.dataSource);
+    //   },
+    //   (error) => {
+    //     console.log(error);
+    //     this.notificationService.config.duration = 10000;
+    //     this.notificationService.warn(`Error 404 : Not found`);
+    //     this.dataSource = [];
+    //   }
+    // );
   }
   onRowSelection(element1, event) {
     if (event.checked) {
@@ -176,7 +176,7 @@ export class TableComponent implements OnInit {
   }
 
   postCancelRequest() {
-    console.log(this.selectedRows[0]);
+    // console.log(this.selectedRows[0]);
     let payload = {
       PernrFrom: this.selectedRows[0].PernrFrom,
       PernrTo: this.selectedRows[0].PernrTo,
@@ -185,7 +185,23 @@ export class TableComponent implements OnInit {
       Mode: 'CAN',
     };
     console.log(payload);
-    // *Kindly send this payload for deleting request
+    // *Calling delete request odata api here Uncomment this
+    // this.formService
+    //   .deleteRequest(JSON.stringify(payload),this.csrfToken)
+    //   .subscribe((response) => {
+    //     if (response.status == 200) {
+    //       this.formService.form.reset();
+    //       // this.notificationService.success(`:: ${response.message}`);
+    //       this.notificationService.success(`:: Deleted the selected request Successfully!!`);
+    //       this.getOverviewData();
+    //     } else {
+    //       this.notificationService.info(
+    //         ':: Bad Request, Kindly Submit Again!!'
+    //       );
+    //     }
+    //   });
+
+    // *Below is code for nodejs deleting request
     this.formService
       .deleteRequest(this.selectedRows[0])
       .subscribe((response) => {

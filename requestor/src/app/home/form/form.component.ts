@@ -13,6 +13,7 @@ import { HomeComponent } from '../home.component';
   styleUrls: ['./form.component.css'],
 })
 export class FormComponent implements OnInit {
+  csrfToken = '';
   minFromDate: Date;
   maxFromDate: Date;
   minToDate: Date;
@@ -50,6 +51,9 @@ export class FormComponent implements OnInit {
   getColleaguesData() {
     // *1. This is for odata
     this.formService.getOdataColleagues().subscribe((res) => {
+      // *pls uncomment this
+      // this.csrfToken = res.headers.get('X-CSRF-Token');
+
       let array = [];
       res['entry'].forEach((colleage) => {
         array.push(colleage['content']['properties']);
@@ -113,7 +117,18 @@ export class FormComponent implements OnInit {
       Mode: 'INS',
     };
     console.log(payload);
-    // *Ignore the below codes
+    // *Uncomment this
+    // this.formService.postNewRequest(JSON.stringify(payload),this.csrfToken).subscribe((res) => {
+    //   if (res.status == 200) {
+    //     this.formService.form.reset();
+    //     this.notificationService.success(`:: ${res.message}`);
+    //     this.dialogRef.close(1);
+    //   } else {
+    //     this.notificationService.warn(':: Bad Request, Kindly Submit Again!!');
+    //   }
+    // });
+
+    /// *Pls comment this (for nodejs)
     let data = {
       fromDate: getParsedDate(fromValues.fromDate),
       toDate: getParsedDate(fromValues.toDate),
@@ -123,7 +138,6 @@ export class FormComponent implements OnInit {
       toEmployeeName: this.findEmployeeName(fromValues.toEmployee),
     };
 
-    // * Call the post new request api here
     this.formService.postNewRequest(data).subscribe((res) => {
       if (res.status == 200) {
         this.formService.form.reset();
