@@ -74,7 +74,7 @@ export class TableComponent implements OnInit {
       // response['entry'].forEach((element) => {
       //   array.push(element['content']['properties']);
       // });
-      // * Kindly write foreach method if there are multiple request
+      // * Kindly write foreach method if there are multiple request see this
       array.push(response['entry']['content']['properties']);
       this.odataDataSource = new MatTableDataSource(array);
       // console.log(this.odataDataSource);
@@ -156,11 +156,12 @@ export class TableComponent implements OnInit {
   }
 
   approveRequest() {
+    //*Here is the approval function
     let finalData = JSON.parse(JSON.stringify(this.selection.selected));
     console.log(finalData); //* post this final data to backend in the format asked.
     // this.getFinalData(finalData);
     // console.log(finalData);
-
+    console.log(this.selection.selected); //*All the selected row will be here in an array
     // *Kindly call the post approval api here all the selected data is in final data
     this.dataService.approveRequests(finalData).subscribe(
       (response) => {
@@ -178,6 +179,7 @@ export class TableComponent implements OnInit {
     let finalData = JSON.parse(JSON.stringify(this.selection.selected));
     // this.getFinalData(finalData);
     console.log(finalData); //* post this final data to backend in the format asked.
+    console.log(this.selection.selected); //*All the selected row will be here in an array
     // console.log(finalData);
     this.dataService.rejectRequests(finalData).subscribe(
       (response) => {
@@ -186,11 +188,12 @@ export class TableComponent implements OnInit {
         this.notificationService.info(':: Rejected successfully!!');
       },
       (error) => {
-        // * Harphool was asking to open a dialog here incase there was error in rejecting some of the requests.  and show the in the table the requests that havent been rejected successfully
+        // * Harphool was asking to open a dialog here incase there was error in rejecting some of the requests.  and show the in the table the requests that havent been rejected successfully. Dont bother about that now.
         this.notificationService.warn(':: Error while rejecting requests!!');
       }
     );
   }
+  // ignore this code
   getFinalData(finalData) {
     finalData.forEach((data) => {
       delete data['fromBusiness'];
