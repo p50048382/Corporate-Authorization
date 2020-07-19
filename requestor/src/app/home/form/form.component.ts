@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 
 import { NotificationService } from 'src/app/shared/notification.service';
@@ -21,6 +21,7 @@ export class FormComponent implements OnInit {
   colleagues: any = [];
   fromCollegues: any = [];
   toCollegues: any = [];
+
   constructor(
     public formService: FormService,
     public dialogRef: MatDialogRef<HomeComponent>,
@@ -34,6 +35,7 @@ export class FormComponent implements OnInit {
 
     this.getColleaguesData();
   }
+
   setDate() {
     this.minFromDate = new Date();
     this.maxFromDate = new Date(9999, 12, 31);
@@ -41,10 +43,12 @@ export class FormComponent implements OnInit {
     this.maxToDate = new Date(9999, 12, 31);
   }
   validateDate1(type: string, event: MatDatepickerInputEvent<Date>) {
-    // console.log(event.value);
+    // console.log(event);
+    // console.log(this.formService.form.controls);
     this.minToDate = event.value;
   }
-  validateDate2(type: string, event) {
+  validateDate2(type: string, event: MatDatepickerInputEvent<Date>) {
+    // console.log(event);
     this.maxFromDate = event.value;
   }
 
@@ -73,12 +77,19 @@ export class FormComponent implements OnInit {
   }
   onFromColleagueChange(fromColleageInput) {
     // *1. odata binding
-    // console.log(fromColleageInput);
+    // console.log(fromColleageInput.value);
     this.toCollegues = [...this.colleagues];
+
     this.toCollegues.splice(
-      this.toCollegues.findIndex((x) => x.Ename === fromColleageInput.value),
+      this.toCollegues.findIndex((x) => {
+        let index = x.Pernr == fromColleageInput.value;
+        // console.log(index);
+        return index;
+      }),
       1
     );
+    // console.log(this.toCollegues);
+    // console.log(this.colleagues);
     // *2.Nodejs change in toCollegues drop down array
     // this.toCollegues = [...this.colleagues];
     // this.toCollegues.splice(
@@ -92,9 +103,12 @@ export class FormComponent implements OnInit {
     // console.log(toColleageInput);
     this.fromCollegues = [...this.colleagues];
     this.fromCollegues.splice(
-      this.fromCollegues.findIndex((x) => x.Ename === toColleageInput.value),
+      this.fromCollegues.findIndex((x) => x.Pernr == toColleageInput.value),
       1
     );
+
+    // console.log(this.fromCollegues);
+    // console.log(this.colleagues);
     // *2.nodejs change in fromCollegues drop down array
     // this.fromCollegues = [...this.colleagues];
     // this.fromCollegues.splice(
@@ -107,6 +121,7 @@ export class FormComponent implements OnInit {
   }
   postData() {
     let fromValues = this.formService.form.getRawValue();
+    console.log(fromValues);
     // *Kindly call the post data api here and post this data for new request. Modify the data according to the required format The from values contains the new data.
     // console.log(fromValues);
     let payload = {

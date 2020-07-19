@@ -27,6 +27,7 @@
           <input
             formControlName="fromDate"
             matInput
+            #resultPickerModel="ngModel"
             [matDatepicker]="picker1"
             placeholder="From Date"
             [min]="minFromDate"
@@ -38,6 +39,10 @@
             matSuffix
             [for]="picker1"
           ></mat-datepicker-toggle>
+          <mat-error *ngIf="resultPickerModel.hasError('matDatepickerParse')">
+            "{{ resultPickerModel.getError("matDatepickerParse").text }}" is not
+            a valid date!
+          </mat-error>
           <mat-datepicker #picker1></mat-datepicker>
         </mat-form-field>
       </div>

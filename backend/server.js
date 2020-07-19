@@ -4,6 +4,7 @@ var app = express();
 var odataPastRequests = require("./odata");
 var odataColleagues = require("./odataColleagues");
 var approverOData = require("./approver");
+var appError = require("./appError");
 var colleagues = [
   {
     name: "Dilshad Ahmad",
@@ -140,6 +141,7 @@ app.post("/approveRequests", (req, res, next) => {
       }
     })
   );
+  console.log("Called here");
   res.json({ message: "Request has been approved successfuly", status: "200" });
 });
 

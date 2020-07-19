@@ -13,7 +13,8 @@ import { FormComponent } from './home/form/form.component';
 import { OverviewService } from './shared/overview.service';
 import { DeleteRequestComponent } from './home/delete-request/delete-request.component';
 import { DatePipe } from '@angular/common';
-
+import { CustomDateAdapter } from './shared/custom.date.adapter';
+import { DateAdapter } from '@angular/material/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { DatePipe } from '@angular/common';
   providers: [
     DatePipe,
     OverviewService,
-    [{ provide: MAT_DATE_LOCALE, useValue: 'en-IN' }],
+    { provide: MAT_DATE_LOCALE, useValue: 'en-GB' },
+    { provide: DateAdapter, useClass: CustomDateAdapter },
   ],
   bootstrap: [AppComponent],
 })

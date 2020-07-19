@@ -8,9 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableComponent } from './table/table.component';
 import { DataService } from './shared/data.service';
 import { DialogComponent } from './table/dialog/dialog.component';
+import { DialogErrorComponent } from './table/dialog-error/dialog-error.component';
 
 @NgModule({
-  declarations: [AppComponent, TableComponent, DialogComponent],
+  declarations: [
+    AppComponent,
+    TableComponent,
+    DialogComponent,
+    DialogErrorComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

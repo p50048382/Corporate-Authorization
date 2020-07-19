@@ -10,8 +10,8 @@
       <mat-icon>poll</mat-icon>
       <b>OverView Screen</b>
     </div> -->
-  <div class="container">
-    <mat-table [dataSource]="odataDataSource" class="mat-elevation-z8">
+  <div class="container mat-elevation-z8" style="padding: 0;">
+    <mat-table [dataSource]="odataDataSource">
       <!--- Note that these columns can be defined in any order.
                   The actual rendered columns are set as a property on the row definition" -->
       <!-- Checkbox Column -->
@@ -20,7 +20,11 @@
           >SELECT</mat-header-cell
         >
         <mat-cell *matCellDef="let element" style="padding: 0px !important;">
-          <mat-checkbox color="warn" (change)="onRowSelection(element, $event)">
+          <mat-checkbox
+            color="warn"
+            (change)="onRowSelection(element, $event)"
+            [disabled]="element.Status === 'Cancelled'"
+          >
           </mat-checkbox>
         </mat-cell>
       </ng-container>
@@ -141,6 +145,10 @@
         }"
       ></mat-footer-row>
     </mat-table>
+    <mat-paginator
+      [pageSizeOptions]="[5, 10, 20]"
+      showFirstLastButtons
+    ></mat-paginator>
   </div>
 </div>
 

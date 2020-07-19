@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
-import { Router, Scroll } from '@angular/router';
+import { MatPaginator } from '@angular/material/paginator';
 import { OverviewService } from 'src/app/shared/overview.service';
 import { NotificationService } from 'src/app/shared/notification.service';
 import { MatTableDataSource } from '@angular/material/table';
@@ -44,6 +44,7 @@ export class TableComponent implements OnInit {
     'EnameApprover',
     'status',
   ];
+  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   dataSource: any = null;
   selectedRows = [];
   csrfToken = '';
@@ -75,6 +76,7 @@ export class TableComponent implements OnInit {
       });
       // array.push(response['entry']['content']['properties']);
       this.odataDataSource = new MatTableDataSource(array);
+      this.odataDataSource.paginator = this.paginator;
     });
 
     // * This is for nodejs data comment this

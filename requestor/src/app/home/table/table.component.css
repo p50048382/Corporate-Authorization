@@ -9,7 +9,7 @@
   min-width: 700px;
 }
 mat-card,
-mat-table {
+div .mat-elevation-z8 {
   min-width: 700px;
   background-color: cornsilk;
 }
@@ -31,7 +31,7 @@ mat-row {
 @media (max-width: 700px) {
   mat-card,
   mat-table {
-    margin: 5px !important;
+    margin: 5px 5px 0 5px !important;
   }
   .container {
     margin: 0 !important;
